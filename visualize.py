@@ -2,17 +2,12 @@ import pygame
 import pyaudio
 import numpy as np
 
-# Initialize Pygame
 pygame.init()
 
-# Set the width and height of the Pygame window
 width, height = 800, 400
 screen = pygame.display.set_mode((width, height))
-
-# Set the title of the Pygame window
 pygame.display.set_caption("Real-time Sound Visualization")
 
-# Initialize Pyaudio
 p = pyaudio.PyAudio()
 
 for i in range(p.get_device_count()):
