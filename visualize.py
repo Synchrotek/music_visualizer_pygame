@@ -31,30 +31,22 @@ stream = p.open(format=FORMAT,channels=CHANNELS,
                 frames_per_buffer=CHUNK)
 
 while True:
-    # Read audio data from the stream
     data = stream.read(CHUNK)
-    # Convert the data to a numpy array
     samples = np.frombuffer(data, dtype=np.int16)
     
-    # Clear the Pygame screen
     screen.fill((0, 0, 0))
     
-    # Calculate the y-position of each sample
     y = (samples + 32768) * height / 65536
     
-    # Draw the sound waves on the Pygame screen
     for i in range(1, len(y)):
         pygame.draw.line(screen, (255, 255, 255), (i - 1, y[i - 1]), (i, y[i]), 1)
     
-    # Update the Pygame display
     pygame.display.flip()
     
-    # Check for Pygame events
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
 
-# Stop and close the microphone stream
 stream.stop_stream()
 stream.close()
 
