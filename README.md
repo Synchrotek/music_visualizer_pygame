@@ -1,4 +1,4 @@
 # music_visualizer_pygame
 
-##Required libraries : 
+## Required libraries : 
 - pygame
