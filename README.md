@@ -1,7 +1,9 @@
 # music_visualizer_pygame
 
+<hr>
+
 ## This visualize.py :
-- First it takes the sound that is playing in the system
+- First it either takes the sound from your mic or the sound playing in your system.
 - Then analyzes that audio chunk by chunk.
 - Then it produces the visualization in the window created with pygame
 
