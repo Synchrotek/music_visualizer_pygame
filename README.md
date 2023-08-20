@@ -1,4 +1,6 @@
 # music_visualizer_pygame
 
-## Required libraries : 
+## Required python libraries : 
 - pygame
+- pyaudio
+- numpy
