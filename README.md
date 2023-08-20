@@ -9,7 +9,7 @@
 
 ## Note :
 - This code takes the system sound with help of a special  microphone named "Stereo mix".
-- If your system doesn't have this option then Write your mic name in the "mic" Variable on line 5.
+- If your system doesn't have this option then Write your mic name in the "micInpt" Variable on line 5.
 
 ### Required python libraries : 
 
