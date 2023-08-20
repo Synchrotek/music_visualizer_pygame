@@ -25,10 +25,8 @@ FORMAT = pyaudio.paInt16
 CHANNELS = 1
 RATE = 44100
 
-stream = p.open(format=FORMAT,
-                channels=CHANNELS,
-                rate=RATE,
-                input=True,
+stream = p.open(format=FORMAT,channels=CHANNELS,
+                rate=RATE,input=True,
                 input_device_index=stereo_mix_device_index,
                 frames_per_buffer=CHUNK)
 
