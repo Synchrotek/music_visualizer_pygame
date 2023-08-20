@@ -12,6 +12,9 @@
 - If your system doesn't have this option then Write your mic name in the "mic" Variable on line 5.
 
 ### Required python libraries : 
-1. pygame -> ``` pip install pygame ```
-2. pyaudio -> ``` pip install pygame ```
-3. numpy -> ``` pip install pygame ```
+
+```
+1.  pip install pygame 
+2.  pip install pygame 
+3.  pip install pygame
+```
