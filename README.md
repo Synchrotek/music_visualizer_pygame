@@ -3,6 +3,7 @@
 <hr>
 
 ## This visualize.py :
+- Produces a simple real-time visualization by Analyzing sound.
 - First it takes Either the sound from your mic or the sound playing in your system.
 - Then analyzes that audio chunk by chunk.
 - Then it produces the visualization in the window, created with pygame.
