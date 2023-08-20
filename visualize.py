@@ -49,9 +49,5 @@ while True:
 
 stream.stop_stream()
 stream.close()
-
-# Terminate Pyaudio
 p.terminate()
-
-# Quit Pygame
 pygame.quit()
