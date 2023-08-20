@@ -14,13 +14,13 @@ p = pyaudio.PyAudio()
 
 for i in range(p.get_device_count()):
     info = p.get_device_info_by_index(i)
-    if "stereo mix" in info["name"].lower():
-        stereo_mix_device_index = i
+    if micInpt in info["name"].lower():
+        mic_index = i
         break
 else:
     raise ValueError("Stereo Mix device not found")
 
-print(f"stereo_mix_device_index : {stereo_mix_device_index}")
+# print(f"mic index : {mic_index}")
 
 CHUNK = 1024
 FORMAT = pyaudio.paInt16
@@ -29,7 +29,7 @@ RATE = 44100
 
 stream = p.open(format=FORMAT,channels=CHANNELS,
                 rate=RATE,input=True,
-                input_device_index=stereo_mix_device_index,
+                input_device_index=mic_index,
                 frames_per_buffer=CHUNK)
 
 while True:
