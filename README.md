@@ -15,6 +15,6 @@
 
 ```
 1.  pip install pygame 
-2.  pip install pygame 
-3.  pip install pygame
+2.  pip install pyaudio 
+3.  pip install numpy
 ```
