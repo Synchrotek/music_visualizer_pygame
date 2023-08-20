@@ -18,7 +18,7 @@ for i in range(p.get_device_count()):
         mic_index = i
         break
 else:
-    raise ValueError("Stereo Mix device not found")
+    raise ValueError("Specified mic not found")
 
 # print(f"mic index : {mic_index}")
 
