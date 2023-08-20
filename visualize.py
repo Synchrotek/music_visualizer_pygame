@@ -20,13 +20,11 @@ else:
 
 print(f"stereo_mix_device_index : {stereo_mix_device_index}")
 
-# Set the audio parameters
 CHUNK = 1024
 FORMAT = pyaudio.paInt16
 CHANNELS = 1
 RATE = 44100
 
-# Open the microphone stream
 stream = p.open(format=FORMAT,
                 channels=CHANNELS,
                 rate=RATE,
@@ -34,9 +32,7 @@ stream = p.open(format=FORMAT,
                 input_device_index=stereo_mix_device_index,
                 frames_per_buffer=CHUNK)
 
-# Start the Pygame main loop
-running = True
-while running:
+while True:
     # Read audio data from the stream
     data = stream.read(CHUNK)
     # Convert the data to a numpy array
