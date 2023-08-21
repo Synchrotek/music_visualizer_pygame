@@ -4,7 +4,6 @@ import numpy as np
 
 # IF "stereo mix" not avialable 
 # then write your availabe mic name in micInpt
-
 micInpt = "stereo mix" 
 
 pygame.init()
