@@ -1,6 +1,6 @@
 # music_visualizer_pygame
 
-<br> 
+<hr>
 
 ## This visualize.py :
 - Produces a simple real-time visualization by Analyzing sound.
