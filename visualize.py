@@ -3,7 +3,7 @@ import pyaudio
 import numpy as np
 
 micInpt = "stereo mix"
- 
+
 pygame.init()
 
 width, height = 800, 400
