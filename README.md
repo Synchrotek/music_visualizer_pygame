@@ -8,7 +8,7 @@
 - Then analyzes that audio chunk by chunk.
 - Then it produces the visualization in the window, created with pygame.
 
-## Note :
+## Note : 
 - This code takes the system sound with help of a special  microphone named "Stereo mix".
 - If your system doesn't have this option then Write your mic name in the "micInpt" Variable on line 7.
 
